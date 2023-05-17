@@ -3,7 +3,7 @@ import axios from 'axios';
 import Dishes from './components/dishes';
 import { useState, useEffect } from 'react';
 
-const API_URL = 'http://localhost:3000/api/v1/dishes';
+const API_URL = 'http://localhost:3001/api/v1/dishes';
 
 function getAPIData() {
     return axios.get(API_URL)
@@ -15,7 +15,6 @@ function App() {
 
     useEffect(() => {
         let mounted = true;
-
         getAPIData().then((items) => {
             if (mounted) {
                 setDishes(items);
