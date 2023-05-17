@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 
 // import axios from 'axios';
 // import Dishes from './components/dishes';
@@ -12,6 +12,9 @@ import './App.css';
 // }
 
 function App() {
+    return(
+        <h1>test</h1>
+    )
 }
 
 export default App;
